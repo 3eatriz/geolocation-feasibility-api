@@ -24,12 +24,19 @@ http://localhost:8080
 docker build -t geolocation-api .
 docker run -p 8080:8080 geolocation-api
 ```
+
+## Acessar documentação
+
+```bash
+http://localhost:8080/swagger-ui/index.html
+```
+
 ## Estrutura do projeto
 
 ```bash
 src/
  └── main/
-     ├── java/com/bia/geolocationfeasibility/
+     ├── java/com/beatriz/geolocationfeasibility/
      │    ├── controller/
      │    ├── service/
      │    ├── domain/
