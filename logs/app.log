@@ -1517,3 +1517,266 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8
 2026-04-25 18:56:30 | INFO  | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplication for test class com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest
 2026-04-25 18:56:30 | INFO  | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest]: FeasibilityIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
 2026-04-25 18:56:30 | INFO  | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplication for test class com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest
+2026-04-25 19:05:54 | INFO  | o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-04-25 19:05:54 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 13196 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:05:54 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:05:54 | INFO  | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-25 19:05:54 | INFO  | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-25 19:05:55 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:05:56 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:05:56 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:05:56 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:05:56 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1298 ms
+2026-04-25 19:05:56 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:05:56 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:05:56 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:05:56 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 2.718 seconds (process running for 3.14)
+2026-04-25 19:06:05 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:06:05 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:06:05 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-04-25 19:06:05 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=188eeb0d-4a39-49cb-baef-b452500f686f | method=GET | uri=/api/feasibility
+2026-04-25 19:06:05 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=188eeb0d-4a39-49cb-baef-b452500f686f | status=200 | time=176ms
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=2336f212-5566-496f-b43d-c0ca779bb16c | method=GET | uri=/swagger-ui/index.html
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=2336f212-5566-496f-b43d-c0ca779bb16c | status=304 | time=19ms
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=6b7272be-662b-40aa-8a7b-09f95da64f20 | method=GET | uri=/swagger-ui/swagger-ui.css
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=00b82194-f7c7-4e42-b978-6422c984a9be | method=GET | uri=/swagger-ui/index.css
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=6b7272be-662b-40aa-8a7b-09f95da64f20 | status=304 | time=2ms
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=00b82194-f7c7-4e42-b978-6422c984a9be | status=304 | time=2ms
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=d9737671-a330-4194-a184-84f1c242f151 | method=GET | uri=/swagger-ui/swagger-ui-bundle.js
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=a721607e-cc51-42d4-85a8-83c73cd7f9b1 | method=GET | uri=/swagger-ui/swagger-ui-standalone-preset.js
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=49b0c194-0c49-4344-9ca2-2bef668866b8 | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=d9737671-a330-4194-a184-84f1c242f151 | status=304 | time=3ms
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=a721607e-cc51-42d4-85a8-83c73cd7f9b1 | status=304 | time=2ms
+2026-04-25 19:07:40 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=49b0c194-0c49-4344-9ca2-2bef668866b8 | status=200 | time=21ms
+2026-04-25 19:07:41 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=137082e4-6f06-4c20-ba30-0e8d886be557 | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:07:41 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=302a4f43-931d-47b4-a108-502b6ad8e426 | method=GET | uri=/swagger-ui/favicon-32x32.png
+2026-04-25 19:07:41 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=302a4f43-931d-47b4-a108-502b6ad8e426 | status=200 | time=5ms
+2026-04-25 19:07:41 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=137082e4-6f06-4c20-ba30-0e8d886be557 | status=200 | time=9ms
+2026-04-25 19:07:41 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=733a9440-3649-432e-b93f-b167718790f1 | method=GET | uri=/v3/api-docs
+2026-04-25 19:07:41 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:07:41 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=733a9440-3649-432e-b93f-b167718790f1 | status=500 | time=189ms
+2026-04-25 19:07:55 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=1ee6e4b2-d5af-4297-a9bb-c9aaa6bf8b92 | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:07:55 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=1ee6e4b2-d5af-4297-a9bb-c9aaa6bf8b92 | status=200 | time=4ms
+2026-04-25 19:07:55 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=8e95512d-1502-4df0-b06a-37ef6e2d9aba | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:07:55 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=8e95512d-1502-4df0-b06a-37ef6e2d9aba | status=200 | time=2ms
+2026-04-25 19:07:55 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=a373d806-9cdf-41a8-a5c4-cae500b0b431 | method=GET | uri=/v3/api-docs
+2026-04-25 19:07:55 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:07:55 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=a373d806-9cdf-41a8-a5c4-cae500b0b431 | status=500 | time=30ms
+2026-04-25 19:08:56 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=801e9396-8bd8-4bc4-b029-dd575e109e29 | method=GET | uri=//actuator/health
+2026-04-25 19:08:56 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator/health for request '//actuator/health'.]
+2026-04-25 19:08:56 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=801e9396-8bd8-4bc4-b029-dd575e109e29 | status=500 | time=8ms
+2026-04-25 19:08:56 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=b3d5270e-a052-4b49-ac30-605036e8d3bd | method=GET | uri=/favicon.ico
+2026-04-25 19:08:56 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+2026-04-25 19:08:56 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=b3d5270e-a052-4b49-ac30-605036e8d3bd | status=500 | time=9ms
+2026-04-25 19:09:10 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=784fcc1c-b207-4d63-bf4b-f9544a7b3828 | method=GET | uri=/actuator/health
+2026-04-25 19:09:10 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=784fcc1c-b207-4d63-bf4b-f9544a7b3828 | status=200 | time=27ms
+2026-04-25 19:09:10 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=a118b33d-3b33-46aa-b3ff-8aceb191f65c | method=GET | uri=/favicon.ico
+2026-04-25 19:09:10 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+2026-04-25 19:09:10 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=a118b33d-3b33-46aa-b3ff-8aceb191f65c | status=500 | time=8ms
+2026-04-25 19:20:02 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=f597fcb5-1e97-46b0-8b3e-7d93d3d6c4ac | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:20:02 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=f597fcb5-1e97-46b0-8b3e-7d93d3d6c4ac | status=200 | time=4ms
+2026-04-25 19:20:02 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=522d4451-c540-4d70-822b-ece86cc5c69a | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:20:02 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=522d4451-c540-4d70-822b-ece86cc5c69a | status=200 | time=1ms
+2026-04-25 19:20:02 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=4c1c6f17-23fc-43ea-a9fa-460d1ad95f78 | method=GET | uri=/v3/api-docs
+2026-04-25 19:20:02 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:20:02 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=4c1c6f17-23fc-43ea-a9fa-460d1ad95f78 | status=500 | time=34ms
+2026-04-25 19:20:30 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=964c7e00-c476-47ce-8b71-2ef9aefad25f | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:20:30 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=964c7e00-c476-47ce-8b71-2ef9aefad25f | status=200 | time=4ms
+2026-04-25 19:20:30 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=0b31a828-e523-4580-bd5a-328a1bc7210b | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:20:30 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=0b31a828-e523-4580-bd5a-328a1bc7210b | status=200 | time=1ms
+2026-04-25 19:20:30 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=8229de45-dbb1-42ce-af3c-a4df856111c2 | method=GET | uri=/v3/api-docs
+2026-04-25 19:20:30 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:20:30 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=8229de45-dbb1-42ce-af3c-a4df856111c2 | status=500 | time=27ms
+2026-04-25 19:32:23 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=b2f39a7b-1632-4c84-ac2d-f89af0278758 | method=GET | uri=/v3/api-docs
+2026-04-25 19:32:23 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:32:23 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=b2f39a7b-1632-4c84-ac2d-f89af0278758 | status=500 | time=27ms
+2026-04-25 19:32:23 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=e46cf659-9782-4759-9b6c-7569ba27a8d4 | method=GET | uri=/favicon.ico
+2026-04-25 19:32:23 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+2026-04-25 19:32:23 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=e46cf659-9782-4759-9b6c-7569ba27a8d4 | status=500 | time=5ms
+2026-04-25 19:33:43 | INFO  | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (0 additions, 16 deletions, 1 modification)
+2026-04-25 19:33:43 | INFO  | o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-25 19:33:43 | INFO  | o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:33:43 | INFO  | o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-25 19:33:43 | INFO  | o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:33:43 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 13196 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:33:43 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:33:43 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:33:43 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:33:43 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:33:43 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:33:43 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 288 ms
+2026-04-25 19:33:43 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:33:43 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:33:43 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:33:43 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 0.436 seconds (process running for 1670.224)
+2026-04-25 19:33:44 | INFO  | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-25 19:33:51 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:33:51 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:33:51 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-25 19:33:51 | INFO  | o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 39 ms
+2026-04-25 19:34:16 | INFO  | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (16 additions, 0 deletions, 1 modification)
+2026-04-25 19:34:16 | INFO  | o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-25 19:34:16 | INFO  | o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:34:16 | INFO  | o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-25 19:34:16 | INFO  | o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:34:16 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 13196 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:34:16 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:34:17 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:34:17 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:34:17 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:34:17 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:34:17 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 346 ms
+2026-04-25 19:34:17 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:34:17 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:34:17 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:34:17 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 0.614 seconds (process running for 1703.727)
+2026-04-25 19:34:17 | INFO  | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-25 19:34:21 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:34:21 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:34:21 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-25 19:34:21 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=f92b747e-0d4a-4025-a7e2-ed05aff86795 | method=GET | uri=/api/feasibility
+2026-04-25 19:34:21 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=f92b747e-0d4a-4025-a7e2-ed05aff86795 | status=200 | time=20ms
+2026-04-25 19:35:07 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=22a409ce-3479-420b-a39f-874af0eb9026 | method=GET | uri=/v3/api-docs
+2026-04-25 19:35:07 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:35:07 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=22a409ce-3479-420b-a39f-874af0eb9026 | status=500 | time=31ms
+2026-04-25 19:35:07 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=4ee4a3d1-a557-4949-ac71-4048943e9595 | method=GET | uri=/favicon.ico
+2026-04-25 19:35:07 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+2026-04-25 19:35:07 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=4ee4a3d1-a557-4949-ac71-4048943e9595 | status=500 | time=5ms
+2026-04-25 19:36:52 | INFO  | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (0 additions, 16 deletions, 1 modification)
+2026-04-25 19:36:52 | INFO  | o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-25 19:36:52 | INFO  | o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:36:52 | INFO  | o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-25 19:36:52 | INFO  | o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:36:52 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 13196 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:36:52 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:36:53 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:36:53 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:36:53 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:36:53 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:36:53 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 224 ms
+2026-04-25 19:36:53 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:36:53 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:36:53 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:36:53 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 0.374 seconds (process running for 1859.489)
+2026-04-25 19:36:53 | INFO  | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-25 19:36:56 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:36:56 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:36:56 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-04-25 19:37:03 | INFO  | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (16 additions, 0 deletions, 1 modification)
+2026-04-25 19:37:03 | INFO  | o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-25 19:37:03 | INFO  | o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:37:03 | INFO  | o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-25 19:37:03 | INFO  | o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:37:03 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 13196 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:37:03 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:37:04 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:37:04 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:37:04 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:37:04 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:37:04 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 283 ms
+2026-04-25 19:37:04 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:37:04 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:37:04 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:37:04 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 0.47 seconds (process running for 1870.561)
+2026-04-25 19:37:04 | INFO  | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-25 19:37:06 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:37:06 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:37:06 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-04-25 19:37:06 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=9601e479-f07d-4954-b7b3-175af1c54670 | method=GET | uri=/swagger-ui/index.html
+2026-04-25 19:37:06 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=9601e479-f07d-4954-b7b3-175af1c54670 | status=304 | time=3ms
+2026-04-25 19:37:06 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=914f11aa-8666-439e-bf22-fdfd88075a5a | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:37:06 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=914f11aa-8666-439e-bf22-fdfd88075a5a | status=200 | time=3ms
+2026-04-25 19:37:07 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=550077d3-fadb-40fb-a7d2-622291322244 | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:37:07 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=550077d3-fadb-40fb-a7d2-622291322244 | status=200 | time=3ms
+2026-04-25 19:37:07 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=084fb89e-c2ad-4d7f-8181-305fda5738e2 | method=GET | uri=/v3/api-docs
+2026-04-25 19:37:07 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:37:07 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=084fb89e-c2ad-4d7f-8181-305fda5738e2 | status=500 | time=32ms
+2026-04-25 19:37:25 | INFO  | o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-04-25 19:37:25 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 3124 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:37:25 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:37:25 | INFO  | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-25 19:37:25 | INFO  | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-25 19:37:26 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:37:26 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:37:26 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:37:26 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:37:26 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1318 ms
+2026-04-25 19:37:27 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:37:27 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:37:27 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:37:27 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 2.749 seconds (process running for 3.141)
+2026-04-25 19:37:33 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:37:33 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:37:33 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-25 19:37:33 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=52a24fc5-ea7e-4cc7-98df-c9232c05c78f | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:37:33 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=52a24fc5-ea7e-4cc7-98df-c9232c05c78f | status=200 | time=52ms
+2026-04-25 19:37:33 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=2f82a4cc-21a5-499e-83bf-0cddd3baa405 | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:37:33 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=2f82a4cc-21a5-499e-83bf-0cddd3baa405 | status=200 | time=42ms
+2026-04-25 19:37:33 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=9ec41672-e012-4e0c-b581-0313f268b2ba | method=GET | uri=/v3/api-docs
+2026-04-25 19:37:33 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:37:33 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=9ec41672-e012-4e0c-b581-0313f268b2ba | status=500 | time=201ms
+2026-04-25 19:38:06 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=7e08c867-418c-40fc-85b3-e9d7239c7ad5 | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:38:06 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=7e08c867-418c-40fc-85b3-e9d7239c7ad5 | status=200 | time=5ms
+2026-04-25 19:38:06 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=dd29e615-5b62-491f-b7b5-3ef05f15a091 | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:38:06 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=dd29e615-5b62-491f-b7b5-3ef05f15a091 | status=200 | time=4ms
+2026-04-25 19:38:06 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=992d24a4-c509-40f8-9477-ec7d253f7d22 | method=GET | uri=/v3/api-docs
+2026-04-25 19:38:06 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:38:06 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=992d24a4-c509-40f8-9477-ec7d253f7d22 | status=500 | time=42ms
+2026-04-25 19:39:37 | INFO  | o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2026-04-25 19:39:37 | INFO  | o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-25 19:39:37 | INFO  | o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:39:37 | INFO  | o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-25 19:39:37 | INFO  | o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:39:37 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 3124 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:39:37 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:39:38 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 19:39:38 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:39:38 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 19:39:38 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 19:39:38 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 303 ms
+2026-04-25 19:39:38 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:39:38 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 19:39:38 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 19:39:38 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 0.515 seconds (process running for 134.064)
+2026-04-25 19:39:38 | INFO  | o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-25 19:40:59 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 19:40:59 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 19:40:59 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-25 19:40:59 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=ca0d6c36-572c-41b6-b1ad-b3c238da6212 | method=GET | uri=/api/feasibility
+2026-04-25 19:40:59 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=ca0d6c36-572c-41b6-b1ad-b3c238da6212 | status=200 | time=85ms
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=b7d38c96-2ce8-417c-8076-ba6ee5b4fcbb | method=GET | uri=/swagger-ui/index.html
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=b7d38c96-2ce8-417c-8076-ba6ee5b4fcbb | status=304 | time=3ms
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=5009ad77-359a-408b-a755-7e55f64af41e | method=GET | uri=/swagger-ui/swagger-initializer.js
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=5009ad77-359a-408b-a755-7e55f64af41e | status=200 | time=4ms
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=165bd805-68ea-4900-a1da-aff217e2b8f3 | method=GET | uri=/v3/api-docs/swagger-config
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=165bd805-68ea-4900-a1da-aff217e2b8f3 | status=200 | time=3ms
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=49ee6034-d8cd-42a2-ae37-559202b7482d | method=GET | uri=/v3/api-docs
+2026-04-25 19:41:04 | WARN  | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2026-04-25 19:41:04 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=49ee6034-d8cd-42a2-ae37-559202b7482d | status=500 | time=44ms
+2026-04-25 19:41:16 | INFO  | o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-25 19:41:16 | INFO  | o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-25 19:41:27 | INFO  | o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-04-25 19:41:27 | INFO  | c.b.g.c.FeasibilityControllerTest - Starting FeasibilityControllerTest using Java 23.0.1 with PID 20408 (started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:41:27 | INFO  | c.b.g.c.FeasibilityControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:41:30 | INFO  | o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-04-25 19:41:30 | INFO  | o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-04-25 19:41:30 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:41:30 | INFO  | o.s.t.w.s.TestDispatcherServlet - Completed initialization in 26 ms
+2026-04-25 19:41:30 | INFO  | c.b.g.c.FeasibilityControllerTest - Started FeasibilityControllerTest in 3.255 seconds (process running for 4.437)
+2026-04-25 19:41:30 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=8c2b9293-5ba4-4fd4-8221-bbbb0a6e1821 | method=GET | uri=/api/feasibility
+2026-04-25 19:41:30 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=8c2b9293-5ba4-4fd4-8221-bbbb0a6e1821 | status=200 | time=160ms
+2026-04-25 19:41:30 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=3e46bbdd-1c17-4021-82a1-0d56502cc20f | method=GET | uri=/api/feasibility
+2026-04-25 19:41:30 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=3e46bbdd-1c17-4021-82a1-0d56502cc20f | status=400 | time=27ms
+2026-04-25 19:41:30 | INFO  | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplicationTests]: GeolocationFeasibilityApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-25 19:41:30 | INFO  | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplication for test class com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplicationTests
+2026-04-25 19:41:30 | INFO  | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplicationTests]: GeolocationFeasibilityApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-25 19:41:30 | INFO  | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplication for test class com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplicationTests
+2026-04-25 19:41:31 | INFO  | o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2026-04-25 19:41:31 | INFO  | c.b.g.GeolocationFeasibilityApiApplicationTests - Starting GeolocationFeasibilityApiApplicationTests using Java 23.0.1 with PID 20408 (started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 19:41:31 | INFO  | c.b.g.GeolocationFeasibilityApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 19:41:31 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 19:41:31 | INFO  | c.b.g.GeolocationFeasibilityApiApplicationTests - Started GeolocationFeasibilityApiApplicationTests in 0.485 seconds (process running for 5.426)
+2026-04-25 19:41:31 | INFO  | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest]: FeasibilityIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-25 19:41:31 | INFO  | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplication for test class com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest
+2026-04-25 19:41:31 | INFO  | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest]: FeasibilityIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-25 19:41:31 | INFO  | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.beatriz.geolocation_feasibility_api.GeolocationFeasibilityApiApplication for test class com.beatriz.geolocation_feasibility_api.integration.FeasibilityIntegrationTest
