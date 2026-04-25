@@ -1,9 +1,11 @@
 package com.beatriz.geolocation_feasibility_api.service;
 
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.beatriz.geolocation_feasibility_api.domain.Geometry;
 import com.beatriz.geolocation_feasibility_api.dto.FeasibilityRequestDTO;
 import com.beatriz.geolocation_feasibility_api.dto.FeasibilityResponseDTO;
 import com.beatriz.geolocation_feasibility_api.repository.InMemoryFeasibilityRepository;
@@ -11,55 +13,106 @@ import com.beatriz.geolocation_feasibility_api.repository.InMemoryFeasibilityRep
 @Service
 public class FeasibilityService {
 
-    private final InMemoryFeasibilityRepository repository;
+        private final InMemoryFeasibilityRepository repository;
 
-    public FeasibilityService(InMemoryFeasibilityRepository repository) {
-        this.repository = repository;
-    }
+        public FeasibilityService(InMemoryFeasibilityRepository repository) {
+                this.repository = repository;
+        }
 
-    public List<FeasibilityResponseDTO> execute(FeasibilityRequestDTO request) {
+        private record PointDistance(
+                        Long id,
+                        String name,
+                        Double latitude,
+                        Double longitude,
+                        Double distanceMeters) {
+        }
 
-        return repository.findAll().stream()
-                .filter(e -> e.getStatus().equals("ACTIVE") || e.getStatus().equals("RESERVED"))
-                .map(e -> {
-                    double radius = calculateradius(
-                            request.latitude(),
-                            request.longitude(),
-                            e.getLatitude(),
-                            e.getLongitude()
-                    );
+        public List<FeasibilityResponseDTO> execute(FeasibilityRequestDTO request) {
 
-                    return new FeasibilityResponseDTO(
-                            e.getId(),
-                            e.getNome(),
-                            e.getLatitude(),
-                            e.getLongitude(),
-                            radius
-                    );
-                })
-                .filter(r -> r.radius() <= request.radius())
-                .sorted((a, b) -> Double.compare(a.radius(), b.radius()))
-                .skip((long) request.page() * request.size())
-                .limit(request.size())
-                .toList();
-    }
+                int page = (request.page() == null || request.page() < 0) ? 0 : request.page();
+                int size = (request.size() == null || request.size() <= 0) ? 20 : Math.min(request.size(), 20);
 
-    private double calculateradius(double lat1, double lon1, double lat2, double lon2) {
+                List<PointDistance> processed = repository.findAll()
+                                .stream()
+                                // 1. Filtra status válido
+                                .filter(point -> point.getStatus() != null &&
+                                                (point.getStatus().equals("ACTIVE")
+                                                                || point.getStatus().equals("RESERVED")))
+                                // 2. Valida geometria
+                                .filter(point -> point.getGeometry() != null &&
+                                                !point.getGeometry().isEmpty())
+                                // 3. Remove coordenadas nulas
+                                .filter(point -> {
+                                        Geometry geo = point.getGeometry().get(0);
+                                        return geo.getX() != null && geo.getY() != null;
+                                })
+                                // 4. Calcula distância
+                                .map(point -> {
+                                        Geometry geo = point.getGeometry().get(0);
 
-        final int R = 6371000;
+                                        double distance = calculateDistanceMeters(
+                                                        request.latitude(),
+                                                        request.longitude(),
+                                                        geo.getY(),
+                                                        geo.getX());
 
-        double dLat = Math.toRadians(lat2 - lat1);
-        double dLon = Math.toRadians(lon2 - lon1);
+                                        return new PointDistance(
+                                                        point.getId(),
+                                                        point.getName(),
+                                                        geo.getY(),
+                                                        geo.getX(),
+                                                        distance);
+                                })
+                                // 5. Filtra pelo raio
+                                .filter(p -> p.distanceMeters() <= request.radius())
+                                // 6. Ordena por menor distância
+                                .sorted(Comparator.comparingDouble(PointDistance::distanceMeters))
+                                .toList();
 
-        double a =
-                Math.sin(dLat / 2) * Math.sin(dLat / 2)
-                        + Math.cos(Math.toRadians(lat1))
-                        * Math.cos(Math.toRadians(lat2))
-                        * Math.sin(dLon / 2)
-                        * Math.sin(dLon / 2);
+                // 7. Paginação manual
+                int start = page * size;
+                int end = Math.min(start + size, processed.size());
 
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                if (start >= processed.size()) {
+                        return List.of();
+                }
 
-        return R * c;
-    }
+                return processed.subList(start, end)
+                                .stream()
+                                .map(p -> new FeasibilityResponseDTO(
+                                                p.id(),
+                                                p.name(),
+                                                p.latitude(),
+                                                p.longitude(),
+                                                p.distanceMeters()))
+                                .toList();
+        }
+
+        /**
+         * Haversine em metros
+         */
+        private double calculateDistanceMeters(
+                        Double lat1,
+                        Double lon1,
+                        Double lat2,
+                        Double lon2) {
+                if (lat1 == null || lon1 == null || lat2 == null || lon2 == null) {
+                        throw new IllegalArgumentException("Invalid coordinates for distance calculation");
+                }
+
+                final int EARTH_RADIUS_KM = 6371;
+
+                double latDistance = Math.toRadians(lat2 - lat1);
+                double lonDistance = Math.toRadians(lon2 - lon1);
+
+                double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
+                                + Math.cos(Math.toRadians(lat1))
+                                                * Math.cos(Math.toRadians(lat2))
+                                                * Math.sin(lonDistance / 2)
+                                                * Math.sin(lonDistance / 2);
+
+                double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+                return EARTH_RADIUS_KM * c * 1000; // metros
+        }
 }

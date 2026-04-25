@@ -6,6 +6,5 @@ public record FeasibilityResponseDTO(
         Double latitude,
         Double longitude,
         Double radius
-    ) {
-
+) {
 }
