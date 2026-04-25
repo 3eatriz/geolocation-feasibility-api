@@ -1,0 +1,19 @@
+2026-04-25 15:57:01 | INFO  | o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-04-25 15:57:01 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Starting GeolocationFeasibilityApiApplication using Java 21.0.10 with PID 22920 (C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api\target\classes started by ana-b in C:\Users\ana-b\Desktop\Estudos\geolocation-feasibility-api)
+2026-04-25 15:57:01 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-25 15:57:01 | INFO  | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-25 15:57:01 | INFO  | o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-25 15:57:02 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-25 15:57:02 | INFO  | o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-25 15:57:02 | INFO  | o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-25 15:57:02 | INFO  | o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-25 15:57:02 | INFO  | o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1306 ms
+2026-04-25 15:57:03 | INFO  | o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-04-25 15:57:03 | INFO  | o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-25 15:57:03 | INFO  | o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-25 15:57:03 | INFO  | c.b.g.GeolocationFeasibilityApiApplication - Started GeolocationFeasibilityApiApplication in 2.754 seconds (process running for 3.136)
+2026-04-25 15:57:25 | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-25 15:57:25 | INFO  | o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-25 15:57:25 | INFO  | o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-25 15:57:25 | INFO  | c.b.g.filter.RequestResponseFilter - Incoming request | id=c0d880f8-c76a-4dff-be4a-397b936ae5c7 | method=GET | uri=/api/feasibility
+2026-04-25 15:57:25 | INFO  | c.b.g.filter.RequestResponseFilter - Completed request | id=c0d880f8-c76a-4dff-be4a-397b936ae5c7 | status=200 | time=166ms
